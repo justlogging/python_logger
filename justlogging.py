@@ -15,7 +15,7 @@ class Justlogging:
       log_key = self.log_key
       
     params = urllib.urlencode({'access_key': self.api_key, 'log_key': log_key, 'entry': entry})
-    req = Request("http://matsimitsu.justlogging.com/log", params)
+    req = Request("http://logs.justlogging.com/log", params)
     
     try:
       response = urlopen(req)
